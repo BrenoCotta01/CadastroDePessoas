@@ -8,13 +8,14 @@ import jakarta.persistence.*;
 public class UserModel {
     @Id
             @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long id;
-    String nome;
-    String email;
-    int idade;
+    private Long id;
+    private String nome;
+    private String email;
+    private int idade;
 
     public UserModel() {
     }
+
     public UserModel(String nome, String email, int idade) {
         this.nome = nome;
         this.email = email;
